@@ -118,7 +118,7 @@ def scrape():
                                 jockey_name=soup_txt_l[4 * num + 1].contents[1].contents[0],
                                 horse_number=int(soup_txt_r[1 + 5 * num].contents[0]),
                                 runtime=runtime,
-                                odds=float(soup_txt_r[3 + 5 * num].contents[0]),
+                                odds=soup_txt_r[3 + 5 * num].contents[0],
                                 passing_order=pas,
                                 position=num + 1,
                                 weight=weight,
